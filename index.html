@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung chuyen doi tien te</title>
+    <script src="js/[Baitap]_UngDungChuyenDoiTienTe.js"></script>
+    <style>
+        .mainTable{
+
+        }
+        .resultText{
+            color: #d61b06;
+        }
+        .buttonConvert{
+            background-color: blueviolet;
+            color: white;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table class="mainTable">
+        <tr>
+            <td>Amount</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount"></td>
+            <td>
+                <select id="slFromCurrency">
+                    <option value="1">VND</option>
+                    <option value="2">USD</option>
+                    <option value="3">EUR</option>
+                    <option value="4">GBP</option>
+                </select>
+            </td>
+            <td>
+                <select id="slToCurrency">
+                    <option value="1">VND</option>
+                    <option value="2">USD</option>
+                    <option value="3">EUR</option>
+                    <option value="4">GBP</option>
+                </select>
+            </td>
+            <td><input type="button" name="btn_Convert" onclick="convert()" value="Convert" class="buttonConvert"></td>
+        </tr>
+    </table>
+    <p class="resultText">Rate Result:<span id="result"></span></p>
+</body>
+</html>
